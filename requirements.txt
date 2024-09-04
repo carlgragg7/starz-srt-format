@@ -1,0 +1,10 @@
+
+pydub==0.25.1
+flask
+pytest
+requests
+flask_cors
+boto3
+librosa
+soundfile
+openai
