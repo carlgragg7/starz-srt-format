@@ -49,6 +49,9 @@ def split_segment(items_in_segment, char_limit, srt_counter):
         is_next_not_punctuation = (
             not is_last_item and not items_in_segment[index + 1]["type"] == "punctuation"
         )
+        is_next_timing_diff = (
+            not is_last_item and not items_in_segment[index + 1]["type"] == "punctuation"
+        )
 
         if (
             len(current_text.strip()) >= char_limit
